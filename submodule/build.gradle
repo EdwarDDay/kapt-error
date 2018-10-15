@@ -1,0 +1,12 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm"
+    id "org.jetbrains.kotlin.kapt"
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.30.2"
+    compileOnly "com.google.dagger:dagger:2.17"
+    kapt "com.google.dagger:dagger-compiler:2.17"
+}
+
+kotlin.experimental.coroutines = "enable"

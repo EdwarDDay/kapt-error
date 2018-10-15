@@ -1,0 +1,11 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm"
+    id "org.jetbrains.kotlin.kapt"
+}
+
+dependencies {
+    implementation project(":submodule")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71"
+    compileOnly "com.google.dagger:dagger:2.17"
+    kapt "com.google.dagger:dagger-compiler:2.17"
+}
